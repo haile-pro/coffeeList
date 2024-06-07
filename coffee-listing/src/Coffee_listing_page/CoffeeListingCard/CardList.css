@@ -1,0 +1,177 @@
+.coffe-list .banner{
+    background-image: url('../../assets/image-icon/bg-cafe.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.coffe-list{
+    background-color: #111315;
+    color: #f2efef;
+
+}
+/* All maps data and home page text style */
+
+.all-coffe-and-text{
+    width: 80%;
+    position: relative;
+    top: -170px;
+    background-color: #1B1D1F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 11px;
+    padding: 40px;
+   
+
+}
+/* ------------------- */
+/* heading and discreption style  */
+.home-text{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  
+}
+.vector-image{
+  width: 240px;
+  position: relative;
+  margin: auto;
+  left: 131px;
+  margin-bottom: 0;
+}
+.home-text h1,p,.span-stayle{
+position: relative;
+top: -120px;
+padding: 0;
+
+}
+.home-text h1{
+  margin-bottom: 0;
+}
+.home-text p{
+  margin-bottom: 0;
+  text-align: center;
+  width: 500px;
+}
+.home-text .span-stayle{
+  position: relative;
+  top: -60px;
+  margin-bottom: 0;
+}
+
+/* End heading and discreption style  */
+
+
+
+/* ---------------- */
+.map-coffeeList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 24px; /* Adjust spacing between cards as needed */
+    row-gap: 0px;
+  
+  }
+
+  @media (max-width: 1024px) {
+    .map-coffeeList {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      row-gap: 0px;
+    }
+  }
+
+
+/* mobile view */
+@media (max-width: 640px) {
+
+.all-coffe-and-text{
+    width: 50%;
+    position: relative;
+    top: -130px;
+    background-color: #1B1D1F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 11px;
+    padding: 80px 40px 80px 80px;
+
+}
+
+.map-coffeeList {
+  grid-template-columns: 1fr; /* 1 column on very small screens */
+ row-gap: 0px;
+}
+
+.home-text img{
+  position: relative;
+  top: -50px;
+  left: 150px;
+  clip-path: polygon(0 0, 80% 0, 85% 100%, 0 100%);
+  width: 60%;
+  height: auto;
+}
+
+.home-text {
+  position: relative;
+  top: -30px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+
+.home-text h1{
+  position: relative;
+  margin-bottom: 0;
+  margin: auto;
+
+}
+.home-text p{
+  margin-bottom: 0;
+  text-align: center;
+  width: 310px;
+}
+
+}
+
+@media(max-width:590px){
+  .home-text {
+    position: relative;
+    top: -30px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    left: -60px;
+    padding-right: 100px;
+    
+    }
+    .home-text img{
+      position: relative;
+      left: 140px;
+      width: 60%;
+      
+    }
+}
+
+/* -----------------span button style --------------- */
+.all-span {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px; /* Adjust as needed */
+  border-radius: 5px; /* Adjust as needed for rounded corners */
+  background-color: transparent; /* Default background */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.selected {
+  background-color: #6E757D; /* Background color when selected */
+  color: white; /* Text color when selected */
+}
+
+/* Add additional styling as needed for hover effects, etc. */
+.all-span:hover {
+  opacity: 0.9; /* Example hover effect */
+}

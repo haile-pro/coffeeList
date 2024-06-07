@@ -1,0 +1,54 @@
+.card{
+background-color: #1B1D1F; 
+padding-bottom: 0;
+
+
+}
+.card img{
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.popular{
+    position: relative;
+    top: -340px;
+    left: 10px;
+    background-color:#F6C768 ;
+    border-radius: 20px;
+    padding: 3px 14px;
+    color: #3D2E25;
+    font-size: 15px;
+    font-weight: 600;
+}
+.name{
+    position: relative;
+    top: -9px;
+    font-size: 19px;
+    padding-left: 5px;
+}
+.pricing{
+    position: relative;
+    top: -55px;
+    left: 190px;
+    width: 33px; 
+    background-color:#BEE3CC;
+    padding: 4px 14px;
+    color: #3D2E25;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;    
+}
+.votes{
+    position: relative;
+    top: -102px;
+    left: 40px;
+    color: #6F757C;
+    font-weight: 700;
+    size: 10px;
+}
+.outOf-stock{
+  position: relative;
+  top: -140px;
+  left: 180px;
+  color:#ED735D; 
+}
