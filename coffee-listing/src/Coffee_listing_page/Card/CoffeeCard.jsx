@@ -4,15 +4,27 @@ import './card.css'
 
 function CoffeeCard({picture, name, pricing, rating,votes,popular, available}) {
   return (
-    <div>
+    <div className='card-conaner'>
       <div className='card'>
         <img className='picture' src={picture} alt={name} />
-        <p className='name'>{name}</p>
-        <p className='pricing'>{pricing}</p>
-        <StarRating   rating={rating} />
-        <p className='votes'>{votes}(votes)</p>
+        <div className="priceAndnameinfo">
+            <p className='name'>{name}</p>
+            <p className='pricing'>{pricing}</p>
+        </div>
+        <div className="ratingAndvotes">
+            <div className='rating'>
+              <StarRating   rating={rating} />
+           <p className='votes'>{votes ? `${votes} (votes)` : 'No rating'}</p>
+            </div>
+            <div className='stock'>
+            {!available && <span className='outOf-stock'>Sold Out</span>}
+            </div>
+        </div>
+       
+        
+       
         {popular && <span className='popular'>Popular</span>}
-        {!available && <span className='outOf-stock'>Stock Out</span>}
+        
 
       </div>
     </div>

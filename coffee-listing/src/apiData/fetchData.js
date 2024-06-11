@@ -9,6 +9,6 @@ export const fetchCoffeeData = async () => {
     return data;
   } catch (error) {
     console.error("Could not fetch coffee data:", error);
-    throw error; // Re-throw the error to be handled by the calling function
+    throw error; 
   }
 };

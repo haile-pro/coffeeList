@@ -1,7 +1,6 @@
 import React from 'react';
 import filledStarSrc from '../../assets/image-icon/Star_fill.svg';
 import emptyStarSrc from '../../assets/image-icon/Star.svg';
-import './star.css'
 
 const StarRating = ({ rating }) => {
   const totalStars =1 ;

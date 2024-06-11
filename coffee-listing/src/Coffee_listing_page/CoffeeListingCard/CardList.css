@@ -1,15 +1,16 @@
+/* All maps data and home page text style */
 .coffe-list .banner{
     background-image: url('../../assets/image-icon/bg-cafe.jpg');
     background-size: cover;
     width: 100%;
     height: 300px;
 }
+
 .coffe-list{
     background-color: #111315;
     color: #f2efef;
 
 }
-/* All maps data and home page text style */
 
 .all-coffe-and-text{
     width: 80%;
@@ -21,11 +22,9 @@
     align-items: center;
     margin: 0 auto;
     border-radius: 11px;
-    padding: 40px;
-   
-
+    padding: 40px 40px 60px 40px;
 }
-/* ------------------- */
+
 /* heading and discreption style  */
 .home-text{
   display: flex;
@@ -51,9 +50,10 @@ padding: 0;
   margin-bottom: 0;
 }
 .home-text p{
+  width: 50%;
   margin-bottom: 0;
   text-align: center;
-  width: 500px;
+  align-items: center;
 }
 .home-text .span-stayle{
   position: relative;
@@ -65,24 +65,26 @@ padding: 0;
 
 
 
-/* ---------------- */
+/* ---------------- cards style ----------------*/
 .map-coffeeList {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 24px; /* Adjust spacing between cards as needed */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px; 
     row-gap: 0px;
   
   }
 
+  /* -----Desktop view---------- */
+
   @media (max-width: 1024px) {
     .map-coffeeList {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 0px;
     }
   }
 
 
-/* mobile view */
+/* ----------mobile view---------------- */
 @media (max-width: 640px) {
 
 .all-coffe-and-text{
@@ -95,12 +97,12 @@ padding: 0;
     align-items: center;
     margin: 0 auto;
     border-radius: 11px;
-    padding: 80px 40px 80px 80px;
+    padding: 120px 80px 80px 80px;
 
 }
 
 .map-coffeeList {
-  grid-template-columns: 1fr; /* 1 column on very small screens */
+  grid-template-columns: 1fr; 
  row-gap: 0px;
 }
 
@@ -132,46 +134,84 @@ padding: 0;
 .home-text p{
   margin-bottom: 0;
   text-align: center;
-  width: 310px;
+  width: 100%;
 }
 
 }
 
 @media(max-width:590px){
   .home-text {
-    position: relative;
-    top: -30px;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    left: -60px;
-    padding-right: 100px;
-    
+  position: relative;
+  left: -10px;
+  align-items: center;
+  font-size:medium;
+
     }
     .home-text img{
       position: relative;
       left: 140px;
       width: 60%;
       
-    }
+   }
+.home-text h1{
+  padding-top: 30px;
+  width: 100%;
+  font-size: 20px;
+  font-weight:bolder;
+  text-align: center;
+  
+} 
+.home-text p{
+  line-height: 18px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+.home-text,.span-stayle ,.all-span{
+text-align: center;
+align-items: center;
+margin: auto; 
 }
 
-/* -----------------span button style --------------- */
+.home-text .vector-image{
+  position: relative;
+ left: 80px;
+ padding-top: 20px;
+}
+.span-stayle{
+  display: flex;
+}
+.span-stayle .all-span{
+  width: 115px;
+  position: relative;
+  left: -10px;
+
+
+}
+
+    
+}
+
+/* ----------------- button style --------------- */
 .all-span {
   cursor: pointer;
-  padding: 10px 20px;
-  margin-right: 10px; /* Adjust as needed */
-  border-radius: 5px; /* Adjust as needed for rounded corners */
-  background-color: transparent; /* Default background */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  font-weight: 500;
+  padding: 10px 15px;
+  border-style: none;
+  color: white;
+  gap: 5px;
+  border-radius: 5px; 
+  background-color: transparent;
+  transition: background-color 0.3s;
+  
 }
 
 .selected {
-  background-color: #6E757D; /* Background color when selected */
-  color: white; /* Text color when selected */
+  background-color: #6E757D;
+  color: white; 
 }
 
-/* Add additional styling as needed for hover effects, etc. */
+
 .all-span:hover {
-  opacity: 0.9; /* Example hover effect */
+  opacity: 0.9; 
 }

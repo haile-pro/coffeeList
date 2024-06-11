@@ -35,18 +35,18 @@ function CardList() {
           <h1>Our Collection</h1>
           <p>Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
           <div className='span-stayle'>
-            <span
+            <button
               className={`all-span ${!showAvailable ? 'selected' : ''}`}
               onClick={() => setShowAvailable(false)}
             >
               All Products
-            </span>
-            <span
+            </button>
+            <button
               className={`all-span ${showAvailable ? 'selected' : ''}`}
               onClick={() => setShowAvailable(true)}
             >
               Available Now
-            </span>
+            </button>
           </div>
         </div>
         <div className='map-coffeeList'>
